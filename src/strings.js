@@ -21,11 +21,9 @@ const firstCharacter = (firstCharacter) => {
   return firstCharacter.charAt(0);
 };
 
-function firstCharacters(firstCharacters, n) {
-  if (n==4) {
-   return firstCharacters.substr(0,4);}
-   if (n==2) {
-    return firstCharacters.substr(0,2);}
+const firstCharacters = (string, n) => { 
+  let alpha = string.slice(0, n);
+  return alpha
 };
 
 module.exports = {

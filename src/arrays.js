@@ -31,8 +31,8 @@ const removeNthElement = (a, b) => {
 };
 
 const numbersToStrings = numbers => {
-  alpha = numbers.map(numbers => {
-    return String(numbers);
+  alpha = numbers.map(number => {
+    return String(number);
   });
   return alpha
 };
