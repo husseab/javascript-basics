@@ -1,25 +1,30 @@
 const createPerson = (name, age) => {
-  // your code here
+ return {name:name, age:age}
+  
 };
 
-const getName = object => {
-  // your code here
+const getName = a => {
+return (a.name)
 };
 
 const getProperty = (property, object) => {
-  // your code here
+  return (object[property])
 };
 
 const hasProperty = (property, object) => {
-  // your code here
+  return Boolean(property in object)
+  
 };
 
 const isOver65 = person => {
-  // your code here
+  return Boolean(person.age > 65)
 };
 
 const getAges = people => {
-  // your code here
+
+  let alpha = people.filter( age => {return people[age]})
+  return alpha
+  
 };
 
 const findByName = (name, people) => {

@@ -1,61 +1,88 @@
-const getNthElement = (index, array) => {
-  // your code here
+function getNthElement(index, array) {
+
+return array[index % array.length];
+  
 };
 
-const arrayToCSVString = array => {
-  // your code here
+function arrayToCSVString(array) {
+  return array.join();
+  
+}
+
+function csvStringToArray(string) {
+  return string.split(',');
 };
 
-const csvStringToArray = string => {
-  // your code here
+const addToArray = (a, b) => {
+  
+  b.push(a);
+  
+}
+
+const addToArray2 = (a, b) => {
+NewArray = [...b];
+ NewArray.push(a);
+ return NewArray
+
 };
 
-const addToArray = (element, array) => {
-  // your code here
-};
-
-const addToArray2 = (element, array) => {
-  // your code here
-};
-
-const removeNthElement = (index, array) => {
-  // your code here
+const removeNthElement = (a, b) => {
+  b.splice(a, 1,)
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  alpha = numbers.map(numbers => {
+    return String(numbers);
+  });
+  return alpha
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+ alpha = strings.map(strings => { return strings.toUpperCase();})
+ return alpha
+
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+alpha = strings.map( strings => {return strings.split("").reverse().join("")})
+
+return alpha
 };
 
 const onlyEven = numbers => {
-  // your code here
+  alpha = numbers.filter(numbers => {return numbers % 2 === 0;});
+  return alpha
 };
 
-const removeNthElement2 = (index, array) => {
-  // your code here
+const removeNthElement2 = (a, b) => {
+  let alpha = [...b]; 
+  alpha.splice(a, 1,);
+  return alpha
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  let alpha = strings.filter( strings => {return strings.match(/^[aeiou]/gi)})
+ 
+  return alpha
 };
 
 const removeSpaces = string => {
-  // your code here
+  alpha = string.replace(/\s/g, '')
+  return alpha
 };
 
 const sumNumbers = numbers => {
-  // your code here
+ alpha = numbers.reduce((previousValue, currentValue) => {return previousValue + currentValue}, 0)
+ return alpha
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+ let alpha = strings.map( strings => {return strings.split("").reverse().join("")});
+ let  beta = [...alpha];
+  beta.sort();
+  let ArrayB = [...beta].map( beta => {return beta.split("").reverse().join("")});
+  
+  return ArrayB
 };
 
 module.exports = {
